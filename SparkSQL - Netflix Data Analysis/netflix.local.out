@@ -1,0 +1,200 @@
+
+The following have been reloaded with a version change:
+  1) cpu/0.17.3b => cpu/0.15.4
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen/gcc-8.3.1/spark-3.2.1-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+23/11/14 00:46:20 INFO SparkContext: Running Spark version 3.2.1
+23/11/14 00:46:20 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/11/14 00:46:20 INFO ResourceUtils: ==============================================================
+23/11/14 00:46:20 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/11/14 00:46:20 INFO ResourceUtils: ==============================================================
+23/11/14 00:46:20 INFO SparkContext: Submitted application: Netflix
+23/11/14 00:46:20 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/11/14 00:46:20 INFO ResourceProfile: Limiting resource is cpu
+23/11/14 00:46:20 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/11/14 00:46:20 INFO SecurityManager: Changing view acls to: smittal2
+23/11/14 00:46:20 INFO SecurityManager: Changing modify acls to: smittal2
+23/11/14 00:46:20 INFO SecurityManager: Changing view acls groups to: 
+23/11/14 00:46:20 INFO SecurityManager: Changing modify acls groups to: 
+23/11/14 00:46:20 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(smittal2); groups with view permissions: Set(); users  with modify permissions: Set(smittal2); groups with modify permissions: Set()
+23/11/14 00:46:20 INFO Utils: Successfully started service 'sparkDriver' on port 40099.
+23/11/14 00:46:20 INFO SparkEnv: Registering MapOutputTracker
+23/11/14 00:46:20 INFO SparkEnv: Registering BlockManagerMaster
+23/11/14 00:46:20 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/11/14 00:46:20 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/11/14 00:46:20 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/11/14 00:46:20 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-c0ba4125-62fc-41e3-a5c6-f572818596aa
+23/11/14 00:46:20 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/11/14 00:46:20 INFO SparkEnv: Registering OutputCommitCoordinator
+23/11/14 00:46:20 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/11/14 00:46:20 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://exp-1-03.expanse.sdsc.edu:4040
+23/11/14 00:46:20 INFO SparkContext: Added JAR file:/home/smittal2/project7/netflix.jar at spark://exp-1-03.expanse.sdsc.edu:40099/jars/netflix.jar with timestamp 1699951580028
+23/11/14 00:46:21 INFO Executor: Starting executor ID driver on host exp-1-03.expanse.sdsc.edu
+23/11/14 00:46:21 INFO Executor: Fetching spark://exp-1-03.expanse.sdsc.edu:40099/jars/netflix.jar with timestamp 1699951580028
+23/11/14 00:46:21 INFO TransportClientFactory: Successfully created connection to exp-1-03.expanse.sdsc.edu/198.202.103.252:40099 after 32 ms (0 ms spent in bootstraps)
+23/11/14 00:46:21 INFO Utils: Fetching spark://exp-1-03.expanse.sdsc.edu:40099/jars/netflix.jar to /tmp/spark-9595fa61-b7c9-4624-bf0a-a08f8b540e9f/userFiles-0f1a2cac-4466-40c4-bcd5-9e900f3c455c/fetchFileTemp7956343699093438019.tmp
+23/11/14 00:46:21 INFO Executor: Adding file:/tmp/spark-9595fa61-b7c9-4624-bf0a-a08f8b540e9f/userFiles-0f1a2cac-4466-40c4-bcd5-9e900f3c455c/netflix.jar to class loader
+23/11/14 00:46:21 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42429.
+23/11/14 00:46:21 INFO NettyBlockTransferService: Server created on exp-1-03.expanse.sdsc.edu:42429
+23/11/14 00:46:21 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/11/14 00:46:21 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, exp-1-03.expanse.sdsc.edu, 42429, None)
+23/11/14 00:46:21 INFO BlockManagerMasterEndpoint: Registering block manager exp-1-03.expanse.sdsc.edu:42429 with 434.4 MiB RAM, BlockManagerId(driver, exp-1-03.expanse.sdsc.edu, 42429, None)
+23/11/14 00:46:21 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, exp-1-03.expanse.sdsc.edu, 42429, None)
+23/11/14 00:46:21 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, exp-1-03.expanse.sdsc.edu, 42429, None)
+23/11/14 00:46:22 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 219.7 KiB, free 434.2 MiB)
+23/11/14 00:46:22 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.1 KiB, free 434.2 MiB)
+23/11/14 00:46:22 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on exp-1-03.expanse.sdsc.edu:42429 (size: 32.1 KiB, free: 434.4 MiB)
+23/11/14 00:46:22 INFO SparkContext: Created broadcast 0 from textFile at Netflix.scala:16
+23/11/14 00:46:22 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 219.7 KiB, free 433.9 MiB)
+23/11/14 00:46:22 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 32.1 KiB, free 433.9 MiB)
+23/11/14 00:46:22 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on exp-1-03.expanse.sdsc.edu:42429 (size: 32.1 KiB, free: 434.3 MiB)
+23/11/14 00:46:22 INFO SparkContext: Created broadcast 1 from textFile at Netflix.scala:19
+23/11/14 00:46:23 INFO SharedState: Setting hive.metastore.warehouse.dir ('null') to the value of spark.sql.warehouse.dir.
+23/11/14 00:46:23 INFO SharedState: Warehouse path is 'file:/home/smittal2/project7/spark-warehouse'.
+23/11/14 00:46:25 INFO CodeGenerator: Code generated in 158.367747 ms
+23/11/14 00:46:25 INFO FileInputFormat: Total input files to process : 1
+23/11/14 00:46:25 INFO DAGScheduler: Registering RDD 10 (collect at Netflix.scala:43) as input to shuffle 0
+23/11/14 00:46:25 INFO CodeGenerator: Code generated in 13.926661 ms
+23/11/14 00:46:25 INFO DAGScheduler: Got map stage job 0 (collect at Netflix.scala:43) with 2 output partitions
+23/11/14 00:46:25 INFO DAGScheduler: Final stage: ShuffleMapStage 0 (collect at Netflix.scala:43)
+23/11/14 00:46:25 INFO DAGScheduler: Parents of final stage: List()
+23/11/14 00:46:25 INFO DAGScheduler: Missing parents: List()
+23/11/14 00:46:25 INFO FileInputFormat: Total input files to process : 1
+23/11/14 00:46:25 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[10] at collect at Netflix.scala:43), which has no missing parents
+23/11/14 00:46:25 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 16.3 KiB, free 433.9 MiB)
+23/11/14 00:46:25 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 7.4 KiB, free 433.9 MiB)
+23/11/14 00:46:25 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on exp-1-03.expanse.sdsc.edu:42429 (size: 7.4 KiB, free: 434.3 MiB)
+23/11/14 00:46:25 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1478
+23/11/14 00:46:25 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[10] at collect at Netflix.scala:43) (first 15 tasks are for partitions Vector(0, 1))
+23/11/14 00:46:25 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+23/11/14 00:46:25 INFO DAGScheduler: Registering RDD 13 (collect at Netflix.scala:43) as input to shuffle 1
+23/11/14 00:46:25 INFO DAGScheduler: Got map stage job 1 (collect at Netflix.scala:43) with 2 output partitions
+23/11/14 00:46:25 INFO DAGScheduler: Final stage: ShuffleMapStage 1 (collect at Netflix.scala:43)
+23/11/14 00:46:25 INFO DAGScheduler: Parents of final stage: List()
+23/11/14 00:46:25 INFO DAGScheduler: Missing parents: List()
+23/11/14 00:46:25 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[13] at collect at Netflix.scala:43), which has no missing parents
+23/11/14 00:46:25 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 14.6 KiB, free 433.9 MiB)
+23/11/14 00:46:25 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 7.0 KiB, free 433.9 MiB)
+23/11/14 00:46:25 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on exp-1-03.expanse.sdsc.edu:42429 (size: 7.0 KiB, free: 434.3 MiB)
+23/11/14 00:46:25 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1478
+23/11/14 00:46:25 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[13] at collect at Netflix.scala:43) (first 15 tasks are for partitions Vector(0, 1))
+23/11/14 00:46:25 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+23/11/14 00:46:25 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 0) (exp-1-03.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4503 bytes) taskResourceAssignments Map()
+23/11/14 00:46:25 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 1) (exp-1-03.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4503 bytes) taskResourceAssignments Map()
+23/11/14 00:46:25 INFO Executor: Running task 0.0 in stage 0.0 (TID 0)
+23/11/14 00:46:25 INFO Executor: Running task 1.0 in stage 0.0 (TID 1)
+23/11/14 00:46:25 INFO HadoopRDD: Input split: file:/home/smittal2/project7/small-titles.txt:0+100
+23/11/14 00:46:25 INFO HadoopRDD: Input split: file:/home/smittal2/project7/small-titles.txt:100+101
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 16.128237 ms
+23/11/14 00:46:26 INFO Executor: Finished task 0.0 in stage 0.0 (TID 0). 2033 bytes result sent to driver
+23/11/14 00:46:26 INFO Executor: Finished task 1.0 in stage 0.0 (TID 1). 2033 bytes result sent to driver
+23/11/14 00:46:26 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 2) (exp-1-03.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4504 bytes) taskResourceAssignments Map()
+23/11/14 00:46:26 INFO Executor: Running task 0.0 in stage 1.0 (TID 2)
+23/11/14 00:46:26 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 3) (exp-1-03.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4504 bytes) taskResourceAssignments Map()
+23/11/14 00:46:26 INFO Executor: Running task 1.0 in stage 1.0 (TID 3)
+23/11/14 00:46:26 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 0) in 316 ms on exp-1-03.expanse.sdsc.edu (executor driver) (1/2)
+23/11/14 00:46:26 INFO HadoopRDD: Input split: file:/home/smittal2/project7/small-ratings.txt:0+142
+23/11/14 00:46:26 INFO HadoopRDD: Input split: file:/home/smittal2/project7/small-ratings.txt:142+143
+23/11/14 00:46:26 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 1) in 293 ms on exp-1-03.expanse.sdsc.edu (executor driver) (2/2)
+23/11/14 00:46:26 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/11/14 00:46:26 INFO Executor: Finished task 1.0 in stage 1.0 (TID 3). 1990 bytes result sent to driver
+23/11/14 00:46:26 INFO Executor: Finished task 0.0 in stage 1.0 (TID 2). 1990 bytes result sent to driver
+23/11/14 00:46:26 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 3) in 37 ms on exp-1-03.expanse.sdsc.edu (executor driver) (1/2)
+23/11/14 00:46:26 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 2) in 40 ms on exp-1-03.expanse.sdsc.edu (executor driver) (2/2)
+23/11/14 00:46:26 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/11/14 00:46:26 INFO DAGScheduler: ShuffleMapStage 0 (collect at Netflix.scala:43) finished in 0.472 s
+23/11/14 00:46:26 INFO DAGScheduler: looking for newly runnable stages
+23/11/14 00:46:26 INFO DAGScheduler: running: Set(ShuffleMapStage 1)
+23/11/14 00:46:26 INFO DAGScheduler: waiting: Set()
+23/11/14 00:46:26 INFO DAGScheduler: failed: Set()
+23/11/14 00:46:26 INFO DAGScheduler: ShuffleMapStage 1 (collect at Netflix.scala:43) finished in 0.385 s
+23/11/14 00:46:26 INFO DAGScheduler: looking for newly runnable stages
+23/11/14 00:46:26 INFO DAGScheduler: running: Set()
+23/11/14 00:46:26 INFO DAGScheduler: waiting: Set()
+23/11/14 00:46:26 INFO DAGScheduler: failed: Set()
+23/11/14 00:46:26 INFO ShufflePartitionsUtil: For shuffle(0, 1), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 147.539449 ms
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 12.96898 ms
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 12.225743 ms
+23/11/14 00:46:26 INFO DAGScheduler: Registering RDD 20 (collect at Netflix.scala:43) as input to shuffle 2
+23/11/14 00:46:26 INFO DAGScheduler: Got map stage job 2 (collect at Netflix.scala:43) with 1 output partitions
+23/11/14 00:46:26 INFO DAGScheduler: Final stage: ShuffleMapStage 4 (collect at Netflix.scala:43)
+23/11/14 00:46:26 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 2, ShuffleMapStage 3)
+23/11/14 00:46:26 INFO DAGScheduler: Missing parents: List()
+23/11/14 00:46:26 INFO DAGScheduler: Submitting ShuffleMapStage 4 (MapPartitionsRDD[20] at collect at Netflix.scala:43), which has no missing parents
+23/11/14 00:46:26 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 56.4 KiB, free 433.8 MiB)
+23/11/14 00:46:26 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 24.4 KiB, free 433.8 MiB)
+23/11/14 00:46:26 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on exp-1-03.expanse.sdsc.edu:42429 (size: 24.4 KiB, free: 434.3 MiB)
+23/11/14 00:46:26 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1478
+23/11/14 00:46:26 INFO DAGScheduler: Submitting 1 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[20] at collect at Netflix.scala:43) (first 15 tasks are for partitions Vector(0))
+23/11/14 00:46:26 INFO TaskSchedulerImpl: Adding task set 4.0 with 1 tasks resource profile 0
+23/11/14 00:46:26 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 4) (exp-1-03.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4724 bytes) taskResourceAssignments Map()
+23/11/14 00:46:26 INFO Executor: Running task 0.0 in stage 4.0 (TID 4)
+23/11/14 00:46:26 INFO ShuffleBlockFetcherIterator: Getting 2 (476.0 B) non-empty blocks including 2 (476.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/11/14 00:46:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 8 ms
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 13.829137 ms
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 7.299492 ms
+23/11/14 00:46:26 INFO ShuffleBlockFetcherIterator: Getting 2 (291.0 B) non-empty blocks including 2 (291.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/11/14 00:46:26 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 10.40588 ms
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 6.656575 ms
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 8.552933 ms
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 6.835855 ms
+23/11/14 00:46:26 INFO Executor: Finished task 0.0 in stage 4.0 (TID 4). 4917 bytes result sent to driver
+23/11/14 00:46:26 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 4) in 210 ms on exp-1-03.expanse.sdsc.edu (executor driver) (1/1)
+23/11/14 00:46:26 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+23/11/14 00:46:26 INFO DAGScheduler: ShuffleMapStage 4 (collect at Netflix.scala:43) finished in 0.226 s
+23/11/14 00:46:26 INFO DAGScheduler: looking for newly runnable stages
+23/11/14 00:46:26 INFO DAGScheduler: running: Set()
+23/11/14 00:46:26 INFO DAGScheduler: waiting: Set()
+23/11/14 00:46:26 INFO DAGScheduler: failed: Set()
+23/11/14 00:46:26 INFO ShufflePartitionsUtil: For shuffle(2), advisory target size: 67108864, actual target size 1048576, minimum partition size: 1048576
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 9.54975 ms
+23/11/14 00:46:26 INFO HashAggregateExec: spark.sql.codegen.aggregate.map.twolevel.enabled is set to true, but current version of codegened fast hashmap does not support this aggregate.
+23/11/14 00:46:26 INFO CodeGenerator: Code generated in 52.5434 ms
+23/11/14 00:46:26 INFO BlockManagerInfo: Removed broadcast_2_piece0 on exp-1-03.expanse.sdsc.edu:42429 in memory (size: 7.4 KiB, free: 434.3 MiB)
+23/11/14 00:46:27 INFO SparkContext: Starting job: collect at Netflix.scala:43
+23/11/14 00:46:27 INFO DAGScheduler: Got job 3 (collect at Netflix.scala:43) with 1 output partitions
+23/11/14 00:46:27 INFO DAGScheduler: Final stage: ResultStage 8 (collect at Netflix.scala:43)
+23/11/14 00:46:27 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 7)
+23/11/14 00:46:27 INFO DAGScheduler: Missing parents: List()
+23/11/14 00:46:27 INFO DAGScheduler: Submitting ResultStage 8 (MapPartitionsRDD[24] at collect at Netflix.scala:43), which has no missing parents
+23/11/14 00:46:27 INFO BlockManagerInfo: Removed broadcast_3_piece0 on exp-1-03.expanse.sdsc.edu:42429 in memory (size: 7.0 KiB, free: 434.3 MiB)
+23/11/14 00:46:27 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 49.8 KiB, free 433.8 MiB)
+23/11/14 00:46:27 INFO BlockManagerInfo: Removed broadcast_4_piece0 on exp-1-03.expanse.sdsc.edu:42429 in memory (size: 24.4 KiB, free: 434.3 MiB)
+23/11/14 00:46:27 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 22.5 KiB, free 433.8 MiB)
+23/11/14 00:46:27 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on exp-1-03.expanse.sdsc.edu:42429 (size: 22.5 KiB, free: 434.3 MiB)
+23/11/14 00:46:27 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1478
+23/11/14 00:46:27 INFO DAGScheduler: Submitting 1 missing tasks from ResultStage 8 (MapPartitionsRDD[24] at collect at Netflix.scala:43) (first 15 tasks are for partitions Vector(0))
+23/11/14 00:46:27 INFO TaskSchedulerImpl: Adding task set 8.0 with 1 tasks resource profile 0
+23/11/14 00:46:27 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 5) (exp-1-03.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4453 bytes) taskResourceAssignments Map()
+23/11/14 00:46:27 INFO Executor: Running task 0.0 in stage 8.0 (TID 5)
+23/11/14 00:46:27 INFO ShuffleBlockFetcherIterator: Getting 1 (336.0 B) non-empty blocks including 1 (336.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/11/14 00:46:27 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+23/11/14 00:46:27 INFO Executor: Finished task 0.0 in stage 8.0 (TID 5). 8252 bytes result sent to driver
+23/11/14 00:46:27 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 5) in 48 ms on exp-1-03.expanse.sdsc.edu (executor driver) (1/1)
+23/11/14 00:46:27 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+23/11/14 00:46:27 INFO DAGScheduler: ResultStage 8 (collect at Netflix.scala:43) finished in 0.076 s
+23/11/14 00:46:27 INFO DAGScheduler: Job 3 is finished. Cancelling potential speculative or zombie tasks for this job
+23/11/14 00:46:27 INFO TaskSchedulerImpl: Killing all running tasks in stage 8: Stage finished
+23/11/14 00:46:27 INFO DAGScheduler: Job 3 finished: collect at Netflix.scala:43, took 0.099079 s
+23/11/14 00:46:27 INFO CodeGenerator: Code generated in 9.791717 ms
+3.400	1999   The Love Letter
+2.667	2004   ABC Primetime: Mel Gibson's The Passion of the Christ
+2.286	1997   Vampire Journals
+23/11/14 00:46:27 INFO SparkContext: Invoking stop() from shutdown hook
+23/11/14 00:46:27 INFO SparkUI: Stopped Spark web UI at http://exp-1-03.expanse.sdsc.edu:4040
+23/11/14 00:46:27 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/11/14 00:46:27 INFO MemoryStore: MemoryStore cleared
+23/11/14 00:46:27 INFO BlockManager: BlockManager stopped
+23/11/14 00:46:27 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/11/14 00:46:27 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/11/14 00:46:27 INFO SparkContext: Successfully stopped SparkContext
+23/11/14 00:46:27 INFO ShutdownHookManager: Shutdown hook called
+23/11/14 00:46:27 INFO ShutdownHookManager: Deleting directory /tmp/spark-9595fa61-b7c9-4624-bf0a-a08f8b540e9f
+23/11/14 00:46:27 INFO ShutdownHookManager: Deleting directory /tmp/spark-f7cfdd3d-a7fb-443d-985a-1005ffc7cdf7

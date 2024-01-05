@@ -1,0 +1,100 @@
+4.723	2003   Lord of the Rings: The Return of the King: Extended Edition
+4.717	2001   The Lord of the Rings: The Fellowship of the Ring: Extended Edition
+4.703	2002   Lord of the Rings: The Two Towers: Extended Edition
+4.671	2004   Lost: Season 1
+4.639	2004   Battlestar Galactica: Season 1
+4.605	2004   Fullmetal Alchemist
+4.600	2003   Trailer Park Boys: Season 3
+4.600	2003   Trailer Park Boys: Season 4
+4.596	1995   Tenchi Muyo! Ryo Ohki
+4.593	1994   The Shawshank Redemption: Special Edition
+4.592	2004   Veronica Mars: Season 1
+4.586	2005   Ghost in the Shell: Stand Alone Complex: 2nd Gig
+4.582	2004   Arrested Development: Season 2
+4.581	1994   The Simpsons: Season 6
+4.554	2000   Inu-Yasha
+4.552	2003   Lord of the Rings: The Return of the King: Extended Edition: Bonus Material
+4.545	2003   Lord of the Rings: The Return of the King
+4.544	1980   Star Wars: Episode V: The Empire Strikes Back
+4.543	1993   The Simpsons: Season 5
+4.539	2001   Fruits Basket
+4.534	2004   The Sopranos: Season 5
+4.528	2001   Family Guy: Vol. 2: Season 3
+4.523	1992   The Simpsons: Season 4
+4.523	2004   House, M.D.: Season 1
+4.522	2005   Ah! My Goddess
+4.516	2004   Family Guy: Freakin' Sweet Collection
+4.513	2001   Band of Brothers
+4.513	2000   Gladiator: Extended Edition
+4.504	1972   The Godfather
+4.504	1977   Star Wars: Episode IV: A New Hope
+4.504	1981   Raiders of the Lost Ark
+4.502	1991   Seinfeld: Season 3
+4.497	2003   CSI: Season 4
+4.487	2004   Dead Like Me: Season 2
+4.484	1999   Family Guy: Vol. 1: Seasons 1-2
+4.484	2003   Gilmore Girls: Season 4
+4.482	2002   24: Season 2
+4.474	2001   The West Wing: Season 3
+4.472	2002   CSI: Season 3
+4.470	2004   Six Feet Under: Season 4
+4.468	2004   Samurai Champloo
+4.467	2002   The Sopranos: Season 4
+4.467	2003   24: Season 3
+4.465	2002   Inu-Yasha: The Movie 3: Swords of an Honorable Ruler
+4.462	1987   Anne of Green Gables: The Sequel
+4.462	2004   Stargate SG-1: Season 8
+4.461	1983   Star Wars: Episode VI: Return of the Jedi
+4.461	2002   Lord of the Rings: The Two Towers
+4.460	2000   The Sopranos: Season 2
+4.458	1993   Schindler's List
+4.456	2002   South Park: Season 6
+4.453	2002   The West Wing: Season 4
+4.452	2001   CSI: Season 2
+4.451	2002   Full Metal Panic FUMOFFU
+4.449	1992   Seinfeld: Season 4
+4.449	1999   The West Wing: Season 2
+4.449	2001   24: Season 1
+4.448	2002   Gilmore Girls: Season 3
+4.447	2002   Firefly
+4.444	2001   The Sopranos: Season 3
+4.438	1990   The Simpsons: Season 2
+4.435	2001   Lord of the Rings: The Fellowship of the Ring
+4.430	2004   Smallville: Season 4
+4.428	2003   Six Feet Under: Season 3
+4.426	2001   Trailer Park Boys: Seasons 1 & 2
+4.426	1999   The Sopranos: Season 1
+4.426	2001   Six Feet Under: Season 2
+4.418	2004   Sex and the City: Season 6: Part 2
+4.416	2003   Finding Nemo (Widescreen)
+4.410	2003   Sex and the City: Season 6: Part 1
+4.408	1992   Yu Yu Hakusho
+4.405	2000   Buffy the Vampire Slayer: Season 5
+4.405	1991   The Simpsons: Season 3
+4.404	1974   The Godfather, Part II
+4.403	1985   Anne of Green Gables
+4.398	2000   As Time Goes By: Series 8
+4.397	2000   CSI: Season 1
+4.396	2004   The Shield: Season 3
+4.394	2004   Case Closed: Season 5
+4.392	2002   Alias: Season 2
+4.389	2001   Stargate SG-1: Season 5
+4.388	1950   Cinderella: Special Edition
+4.387	2003   The Shield: Season 2
+4.387	1990   The Simpsons: Treehouse of Horror
+4.386	1989   Seinfeld: Seasons 1 & 2
+4.382	2003   Stargate SG-1: Season 7
+4.380	2001   Buffy the Vampire Slayer: Season 6
+4.379	2004   Rescue Me: Season 1
+4.379	1997   Buffy the Vampire Slayer: Season 2
+4.377	2002   Buffy the Vampire Slayer: Season 7
+4.377	2002   As Time Goes By: Series 9
+4.377	2003   Alias: Season 3
+4.372	2003   Angel: Season 5
+4.372	1995   The Usual Suspects
+4.370	1962   Harakiri
+4.370	2004   Chappelle's Show: Season 2
+4.365	1990   Ken Burns' Civil War
+4.363	2002   Stargate SG-1: Season 6
+4.363	2001   South Park: Season 5
+4.363	2005   Curb Your Enthusiasm: Season 4
