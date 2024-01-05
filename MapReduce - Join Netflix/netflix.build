@@ -1,0 +1,12 @@
+#!/bin/bash
+
+rm -rf netflix.jar classes
+
+module load cpu/0.15.4 gcc/7.5.0 openjdk hadoop/3.2.2
+SW=/expanse/lustre/projects/uot189/fegaras
+
+mkdir -p classes
+javac -d classes -cp classes:`hadoop classpath` src/main/java/Netflix.java
+jar cf netflix.jar -C classes .
+
+echo "Compilation completed."

@@ -1,0 +1,17 @@
+#!/bin/bash
+#SBATCH -A uot189
+#SBATCH --job-name="netflix.local"
+#SBATCH --output="netflix.local.out"
+#SBATCH --partition=compute
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --mem=16G
+#SBATCH --export=ALL 
+#SBATCH --time=10
+
+module load cpu/0.15.4 gcc/7.5.0 openjdk hadoop/3.2.2
+SW=/expanse/lustre/projects/uot189/fegaras
+
+rm -rf output small-output.txt
+hadoop --config $SW/conf jar netflix.jar Netflix small-ratings.txt small-titles.txt output
+cp output/part* small-output.txt
