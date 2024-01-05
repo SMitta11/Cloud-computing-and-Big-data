@@ -1,0 +1,498 @@
+
+The following have been reloaded with a version change:
+  1) cpu/0.17.3b => cpu/0.15.4
+
+WARNING: An illegal reflective access operation has occurred
+WARNING: Illegal reflective access by org.apache.spark.unsafe.Platform (file:/cm/shared/apps/spack/cpu/opt/spack/linux-centos8-zen/gcc-8.3.1/spark-3.2.1-bin-hadoop3.2/jars/spark-unsafe_2.12-3.2.1.jar) to constructor java.nio.DirectByteBuffer(long,int)
+WARNING: Please consider reporting this to the maintainers of org.apache.spark.unsafe.Platform
+WARNING: Use --illegal-access=warn to enable warnings of further illegal reflective access operations
+WARNING: All illegal access operations will be denied in a future release
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+23/10/26 15:57:26 INFO SparkContext: Running Spark version 3.2.1
+23/10/26 15:57:26 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+23/10/26 15:57:27 INFO ResourceUtils: ==============================================================
+23/10/26 15:57:27 INFO ResourceUtils: No custom resources configured for spark.driver.
+23/10/26 15:57:27 INFO ResourceUtils: ==============================================================
+23/10/26 15:57:27 INFO SparkContext: Submitted application: Graph
+23/10/26 15:57:27 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+23/10/26 15:57:27 INFO ResourceProfile: Limiting resource is cpu
+23/10/26 15:57:27 INFO ResourceProfileManager: Added ResourceProfile id: 0
+23/10/26 15:57:27 INFO SecurityManager: Changing view acls to: smittal2
+23/10/26 15:57:27 INFO SecurityManager: Changing modify acls to: smittal2
+23/10/26 15:57:27 INFO SecurityManager: Changing view acls groups to: 
+23/10/26 15:57:27 INFO SecurityManager: Changing modify acls groups to: 
+23/10/26 15:57:27 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users  with view permissions: Set(smittal2); groups with view permissions: Set(); users  with modify permissions: Set(smittal2); groups with modify permissions: Set()
+23/10/26 15:57:27 INFO Utils: Successfully started service 'sparkDriver' on port 41067.
+23/10/26 15:57:27 INFO SparkEnv: Registering MapOutputTracker
+23/10/26 15:57:27 INFO SparkEnv: Registering BlockManagerMaster
+23/10/26 15:57:27 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+23/10/26 15:57:27 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+23/10/26 15:57:27 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+23/10/26 15:57:27 INFO DiskBlockManager: Created local directory at /tmp/blockmgr-16bdd9a6-967a-40fa-87d4-5c653f66077e
+23/10/26 15:57:27 INFO MemoryStore: MemoryStore started with capacity 434.4 MiB
+23/10/26 15:57:27 INFO SparkEnv: Registering OutputCommitCoordinator
+23/10/26 15:57:27 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+23/10/26 15:57:27 INFO SparkUI: Bound SparkUI to 0.0.0.0, and started at http://exp-1-28.expanse.sdsc.edu:4040
+23/10/26 15:57:27 INFO SparkContext: Added JAR file:/home/smittal2/project5/graph.jar at spark://exp-1-28.expanse.sdsc.edu:41067/jars/graph.jar with timestamp 1698361046912
+23/10/26 15:57:27 INFO Executor: Starting executor ID driver on host exp-1-28.expanse.sdsc.edu
+23/10/26 15:57:27 INFO Executor: Fetching spark://exp-1-28.expanse.sdsc.edu:41067/jars/graph.jar with timestamp 1698361046912
+23/10/26 15:57:28 INFO TransportClientFactory: Successfully created connection to exp-1-28.expanse.sdsc.edu/198.202.103.227:41067 after 24 ms (0 ms spent in bootstraps)
+23/10/26 15:57:28 INFO Utils: Fetching spark://exp-1-28.expanse.sdsc.edu:41067/jars/graph.jar to /tmp/spark-9f729263-1add-4f08-991d-cc812d746780/userFiles-4da75f15-e6e0-4a4d-b82e-33a2c562ab2b/fetchFileTemp17248637467782558015.tmp
+23/10/26 15:57:28 INFO Executor: Adding file:/tmp/spark-9f729263-1add-4f08-991d-cc812d746780/userFiles-4da75f15-e6e0-4a4d-b82e-33a2c562ab2b/graph.jar to class loader
+23/10/26 15:57:28 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33833.
+23/10/26 15:57:28 INFO NettyBlockTransferService: Server created on exp-1-28.expanse.sdsc.edu:33833
+23/10/26 15:57:28 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+23/10/26 15:57:28 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, exp-1-28.expanse.sdsc.edu, 33833, None)
+23/10/26 15:57:28 INFO BlockManagerMasterEndpoint: Registering block manager exp-1-28.expanse.sdsc.edu:33833 with 434.4 MiB RAM, BlockManagerId(driver, exp-1-28.expanse.sdsc.edu, 33833, None)
+23/10/26 15:57:28 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, exp-1-28.expanse.sdsc.edu, 33833, None)
+23/10/26 15:57:28 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, exp-1-28.expanse.sdsc.edu, 33833, None)
+23/10/26 15:57:28 INFO MemoryStore: Block broadcast_0 stored as values in memory (estimated size 219.7 KiB, free 434.2 MiB)
+23/10/26 15:57:28 INFO MemoryStore: Block broadcast_0_piece0 stored as bytes in memory (estimated size 32.1 KiB, free 434.2 MiB)
+23/10/26 15:57:28 INFO BlockManagerInfo: Added broadcast_0_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 32.1 KiB, free: 434.4 MiB)
+23/10/26 15:57:28 INFO SparkContext: Created broadcast 0 from textFile at Graph.scala:15
+23/10/26 15:57:28 INFO FileInputFormat: Total input files to process : 1
+23/10/26 15:57:28 INFO SparkContext: Starting job: sortByKey at Graph.scala:77
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 2 (map at Graph.scala:16) as input to shuffle 12
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 4 (map at Graph.scala:21) as input to shuffle 0
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 2 (map at Graph.scala:16) as input to shuffle 1
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 2 (map at Graph.scala:16) as input to shuffle 2
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 8 (flatMap at Graph.scala:54) as input to shuffle 11
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 2 (map at Graph.scala:16) as input to shuffle 3
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 13 (flatMap at Graph.scala:54) as input to shuffle 10
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 2 (map at Graph.scala:16) as input to shuffle 4
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 18 (flatMap at Graph.scala:54) as input to shuffle 9
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 2 (map at Graph.scala:16) as input to shuffle 5
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 23 (flatMap at Graph.scala:54) as input to shuffle 8
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 28 (flatMap at Graph.scala:54) as input to shuffle 7
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 31 (map at Graph.scala:73) as input to shuffle 6
+23/10/26 15:57:29 INFO DAGScheduler: Got job 0 (sortByKey at Graph.scala:77) with 2 output partitions
+23/10/26 15:57:29 INFO DAGScheduler: Final stage: ResultStage 13 (sortByKey at Graph.scala:77)
+23/10/26 15:57:29 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 12)
+23/10/26 15:57:29 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 12)
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 9 (MapPartitionsRDD[2] at map at Graph.scala:16), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_1 stored as values in memory (estimated size 5.8 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_1_piece0 stored as bytes in memory (estimated size 3.4 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_1_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.4 KiB, free: 434.4 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 1 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 9 (MapPartitionsRDD[2] at map at Graph.scala:16) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 9.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 7 (MapPartitionsRDD[2] at map at Graph.scala:16), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_2 stored as values in memory (estimated size 5.8 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_2_piece0 stored as bytes in memory (estimated size 3.4 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_2_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.4 KiB, free: 434.4 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 2 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 7 (MapPartitionsRDD[2] at map at Graph.scala:16) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 7.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 9.0 (TID 0) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 9.0 (TID 1) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 5 (MapPartitionsRDD[2] at map at Graph.scala:16), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_3 stored as values in memory (estimated size 5.8 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_3_piece0 stored as bytes in memory (estimated size 3.4 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_3_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.4 KiB, free: 434.4 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 3 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 5 (MapPartitionsRDD[2] at map at Graph.scala:16) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 5.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 3 (MapPartitionsRDD[2] at map at Graph.scala:16), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_4 stored as values in memory (estimated size 5.8 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_4_piece0 stored as bytes in memory (estimated size 3.4 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_4_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.4 KiB, free: 434.4 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 4 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 3 (MapPartitionsRDD[2] at map at Graph.scala:16) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 3.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Graph.scala:16), which has no missing parents
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 9.0 (TID 1)
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 9.0 (TID 0)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_5 stored as values in memory (estimated size 7.4 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_5_piece0 stored as bytes in memory (estimated size 4.1 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_5_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 4.1 KiB, free: 434.4 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 5 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 0 (MapPartitionsRDD[2] at map at Graph.scala:16) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 0.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Graph.scala:16), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_6 stored as values in memory (estimated size 5.8 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_6_piece0 stored as bytes in memory (estimated size 3.4 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_6_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.4 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 6 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 2 (MapPartitionsRDD[2] at map at Graph.scala:16) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 2.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:0+18
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:18+18
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 9.0 (TID 1). 1175 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 0.0 (TID 2) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 0.0 (TID 2)
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 9.0 (TID 1) in 179 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 9.0 (TID 0). 1175 bytes result sent to driver
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:0+18
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 0.0 (TID 3) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 0.0 (TID 3)
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:18+18
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 9.0 (TID 0) in 225 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 9 (map at Graph.scala:16) finished in 0.298 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set(ShuffleMapStage 0, ShuffleMapStage 5, ShuffleMapStage 2, ShuffleMapStage 3, ShuffleMapStage 7)
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ShuffleMapStage 1, ResultStage 13, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 4, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 9.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 0.0 (TID 2). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 2.0 (TID 4) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 2.0 (TID 4)
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 0.0 (TID 2) in 50 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:0+18
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 0.0 (TID 3). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 2.0 (TID 4). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 2.0 (TID 5) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 0.0 (TID 3) in 52 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 2.0 (TID 5)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 0.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 3.0 (TID 6) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 0 (map at Graph.scala:16) finished in 0.217 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set(ShuffleMapStage 5, ShuffleMapStage 2, ShuffleMapStage 3, ShuffleMapStage 7)
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ShuffleMapStage 1, ResultStage 13, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 4, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 2.0 (TID 4) in 23 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 3.0 (TID 6)
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 1 (MapPartitionsRDD[4] at map at Graph.scala:21), which has no missing parents
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:0+18
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_7 stored as values in memory (estimated size 8.3 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_7_piece0 stored as bytes in memory (estimated size 4.5 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_7_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 4.5 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 7 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:18+18
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 1 (MapPartitionsRDD[4] at map at Graph.scala:21) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 1.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 2.0 (TID 5). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 3.0 (TID 6). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 1.0 (TID 7) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4260 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 2.0 (TID 5) in 25 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 2.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 1.0 (TID 8) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4260 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 1.0 (TID 7)
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 3.0 (TID 6) in 24 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 2 (map at Graph.scala:16) finished in 0.194 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set(ShuffleMapStage 1, ShuffleMapStage 5, ShuffleMapStage 3, ShuffleMapStage 7)
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 4, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 1.0 (TID 8)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (103.0 B) non-empty blocks including 2 (103.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 8 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (108.0 B) non-empty blocks including 2 (108.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 1.0 (TID 7). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 3.0 (TID 9) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 1.0 (TID 7) in 61 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 1.0 (TID 8). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 5.0 (TID 10) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 1.0 (TID 8) in 62 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 1.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 5.0 (TID 10)
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 1 (map at Graph.scala:21) finished in 0.081 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set(ShuffleMapStage 5, ShuffleMapStage 3, ShuffleMapStage 7)
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 4, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 4 (MapPartitionsRDD[8] at flatMap at Graph.scala:54), which has no missing parents
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:0+18
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 3.0 (TID 9)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_8 stored as values in memory (estimated size 6.2 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:18+18
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_8_piece0 stored as bytes in memory (estimated size 3.6 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_8_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.6 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 8 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 4 (MapPartitionsRDD[8] at flatMap at Graph.scala:54) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 4.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 5.0 (TID 10). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 4.0 (TID 11) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4323 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 5.0 (TID 10) in 22 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 3.0 (TID 9). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 4.0 (TID 11)
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 4.0 (TID 12) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4323 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 3.0 (TID 9) in 26 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 4.0 (TID 12)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 3.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 3 (map at Graph.scala:16) finished in 0.339 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set(ShuffleMapStage 5, ShuffleMapStage 7, ShuffleMapStage 4)
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 1 (171.0 B) non-empty blocks including 1 (171.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (312.0 B) non-empty blocks including 2 (312.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 1 (156.0 B) non-empty blocks including 1 (156.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (271.0 B) non-empty blocks including 2 (271.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 4.0 (TID 11). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 5.0 (TID 13) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 4.0 (TID 11) in 43 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 4.0 (TID 12). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 5.0 (TID 13)
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 7.0 (TID 14) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 7.0 (TID 14)
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 4.0 (TID 12) in 44 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 4.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 4 (flatMap at Graph.scala:54) finished in 0.064 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set(ShuffleMapStage 5, ShuffleMapStage 7)
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 6, ShuffleMapStage 10, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 6 (MapPartitionsRDD[13] at flatMap at Graph.scala:54), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_9 stored as values in memory (estimated size 6.5 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:0+18
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_9_piece0 stored as bytes in memory (estimated size 3.7 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_9_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.7 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 9 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:18+18
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 6 (MapPartitionsRDD[13] at flatMap at Graph.scala:54) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 6.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 5.0 (TID 13). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 7.0 (TID 14). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 6.0 (TID 15) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4477 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 6.0 (TID 15)
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 6.0 (TID 16) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4477 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 5.0 (TID 13) in 22 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 5.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 7.0 (TID 14) in 19 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 6.0 (TID 16)
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 5 (map at Graph.scala:16) finished in 0.414 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set(ShuffleMapStage 6, ShuffleMapStage 7)
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 10, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (109.0 B) non-empty blocks including 2 (109.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 1 (66.0 B) non-empty blocks including 1 (66.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (271.0 B) non-empty blocks including 2 (271.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 6.0 (TID 15). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 7.0 (TID 17) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, PROCESS_LOCAL, 4502 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 7.0 (TID 17)
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 6.0 (TID 15) in 18 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO HadoopRDD: Input split: file:/home/smittal2/project5/small-graph.csv:18+18
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (312.0 B) non-empty blocks including 2 (312.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 7.0 (TID 17). 1132 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 7.0 (TID 17) in 10 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 7.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 7 (map at Graph.scala:16) finished in 0.468 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set(ShuffleMapStage 6)
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 10, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 6.0 (TID 16). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 6.0 (TID 16) in 30 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 6.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 6 (flatMap at Graph.scala:54) finished in 0.045 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set()
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 10, ShuffleMapStage 11, ShuffleMapStage 8)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 8 (MapPartitionsRDD[18] at flatMap at Graph.scala:54), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_10 stored as values in memory (estimated size 6.5 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_10_piece0 stored as bytes in memory (estimated size 3.7 KiB, free 434.1 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_10_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.7 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 10 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 8 (MapPartitionsRDD[18] at flatMap at Graph.scala:54) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 8.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 8.0 (TID 18) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4477 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 8.0 (TID 19) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4477 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 8.0 (TID 19)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (115.0 B) non-empty blocks including 2 (115.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (312.0 B) non-empty blocks including 2 (312.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 8.0 (TID 18)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (108.0 B) non-empty blocks including 2 (108.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 8.0 (TID 19). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 8.0 (TID 19) in 22 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (271.0 B) non-empty blocks including 2 (271.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 8.0 (TID 18). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 8.0 (TID 18) in 32 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 8.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 8 (flatMap at Graph.scala:54) finished in 0.039 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set()
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 10, ShuffleMapStage 11)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 10 (MapPartitionsRDD[23] at flatMap at Graph.scala:54), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_11 stored as values in memory (estimated size 6.5 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_11_piece0 stored as bytes in memory (estimated size 3.7 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_11_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.7 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 11 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 10 (MapPartitionsRDD[23] at flatMap at Graph.scala:54) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 10.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 10.0 (TID 20) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4477 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 10.0 (TID 21) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4477 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 10.0 (TID 21)
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 10.0 (TID 20)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (115.0 B) non-empty blocks including 2 (115.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (108.0 B) non-empty blocks including 2 (108.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 3 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (312.0 B) non-empty blocks including 2 (312.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (271.0 B) non-empty blocks including 2 (271.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 10.0 (TID 20). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 10.0 (TID 20) in 17 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 10.0 (TID 21). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 10.0 (TID 21) in 17 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 10.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 10 (flatMap at Graph.scala:54) finished in 0.024 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set()
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13, ShuffleMapStage 11)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 11 (MapPartitionsRDD[28] at flatMap at Graph.scala:54), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_12 stored as values in memory (estimated size 6.5 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_12_piece0 stored as bytes in memory (estimated size 3.7 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_12_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.7 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 12 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 11 (MapPartitionsRDD[28] at flatMap at Graph.scala:54) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 11.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 11.0 (TID 22) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4477 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 11.0 (TID 23) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4477 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 11.0 (TID 22)
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 11.0 (TID 23)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (115.0 B) non-empty blocks including 2 (115.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (108.0 B) non-empty blocks including 2 (108.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (312.0 B) non-empty blocks including 2 (312.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 11.0 (TID 23). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (271.0 B) non-empty blocks including 2 (271.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 11.0 (TID 23) in 14 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 11.0 (TID 22). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 11.0 (TID 22) in 20 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 11.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 11 (flatMap at Graph.scala:54) finished in 0.025 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set()
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ShuffleMapStage 12, ResultStage 13)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 12 (MapPartitionsRDD[31] at map at Graph.scala:73), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_13 stored as values in memory (estimated size 5.8 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_13_piece0 stored as bytes in memory (estimated size 3.4 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_13_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.4 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 13 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 12 (MapPartitionsRDD[31] at map at Graph.scala:73) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 12.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 12.0 (TID 24) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4260 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 12.0 (TID 25) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4260 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 12.0 (TID 25)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (115.0 B) non-empty blocks including 2 (115.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 12.0 (TID 24)
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 12.0 (TID 25). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (108.0 B) non-empty blocks including 2 (108.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 12.0 (TID 25) in 13 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 12.0 (TID 24). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 12.0 (TID 24) in 19 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 12.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 12 (map at Graph.scala:73) finished in 0.025 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set()
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ResultStage 13)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ResultStage 13 (MapPartitionsRDD[34] at sortByKey at Graph.scala:77), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_14 stored as values in memory (estimated size 6.9 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_14_piece0 stored as bytes in memory (estimated size 3.7 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_14_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.7 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 14 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 13 (MapPartitionsRDD[34] at sortByKey at Graph.scala:77) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 13.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 13.0 (TID 26) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 13.0 (TID 27) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 13.0 (TID 27)
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 13.0 (TID 26)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (103.0 B) non-empty blocks including 2 (103.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 13.0 (TID 26). 1500 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 13.0 (TID 26) in 23 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (103.0 B) non-empty blocks including 2 (103.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 13.0 (TID 27). 1500 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 13.0 (TID 27) in 27 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 13.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ResultStage 13 (sortByKey at Graph.scala:77) finished in 0.034 s
+23/10/26 15:57:29 INFO DAGScheduler: Job 0 is finished. Cancelling potential speculative or zombie tasks for this job
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Killing all running tasks in stage 13: Stage finished
+23/10/26 15:57:29 INFO DAGScheduler: Job 0 finished: sortByKey at Graph.scala:77, took 0.993349 s
+23/10/26 15:57:29 INFO SparkContext: Starting job: collect at Graph.scala:77
+23/10/26 15:57:29 INFO DAGScheduler: Registering RDD 32 (reduceByKey at Graph.scala:76) as input to shuffle 13
+23/10/26 15:57:29 INFO DAGScheduler: Got job 1 (collect at Graph.scala:77) with 2 output partitions
+23/10/26 15:57:29 INFO DAGScheduler: Final stage: ResultStage 28 (collect at Graph.scala:77)
+23/10/26 15:57:29 INFO DAGScheduler: Parents of final stage: List(ShuffleMapStage 27)
+23/10/26 15:57:29 INFO DAGScheduler: Missing parents: List(ShuffleMapStage 27)
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ShuffleMapStage 27 (ShuffledRDD[32] at reduceByKey at Graph.scala:76), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_15 stored as values in memory (estimated size 5.2 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_15_piece0 stored as bytes in memory (estimated size 3.2 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_15_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.2 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 15 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ShuffleMapStage 27 (ShuffledRDD[32] at reduceByKey at Graph.scala:76) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 27.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 27.0 (TID 28) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4260 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 27.0 (TID 29) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4260 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 27.0 (TID 28)
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 27.0 (TID 29)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (103.0 B) non-empty blocks including 2 (103.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 1 ms
+23/10/26 15:57:29 INFO Executor: Finished task 0.0 in stage 27.0 (TID 28). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 0.0 in stage 27.0 (TID 28) in 18 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (103.0 B) non-empty blocks including 2 (103.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO Executor: Finished task 1.0 in stage 27.0 (TID 29). 1476 bytes result sent to driver
+23/10/26 15:57:29 INFO TaskSetManager: Finished task 1.0 in stage 27.0 (TID 29) in 26 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Removed TaskSet 27.0, whose tasks have all completed, from pool 
+23/10/26 15:57:29 INFO DAGScheduler: ShuffleMapStage 27 (reduceByKey at Graph.scala:76) finished in 0.031 s
+23/10/26 15:57:29 INFO DAGScheduler: looking for newly runnable stages
+23/10/26 15:57:29 INFO DAGScheduler: running: Set()
+23/10/26 15:57:29 INFO DAGScheduler: waiting: Set(ResultStage 28)
+23/10/26 15:57:29 INFO DAGScheduler: failed: Set()
+23/10/26 15:57:29 INFO DAGScheduler: Submitting ResultStage 28 (ShuffledRDD[35] at sortByKey at Graph.scala:77), which has no missing parents
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_16 stored as values in memory (estimated size 5.1 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO MemoryStore: Block broadcast_16_piece0 stored as bytes in memory (estimated size 3.0 KiB, free 434.0 MiB)
+23/10/26 15:57:29 INFO BlockManagerInfo: Added broadcast_16_piece0 in memory on exp-1-28.expanse.sdsc.edu:33833 (size: 3.0 KiB, free: 434.3 MiB)
+23/10/26 15:57:29 INFO SparkContext: Created broadcast 16 from broadcast at DAGScheduler.scala:1478
+23/10/26 15:57:29 INFO DAGScheduler: Submitting 2 missing tasks from ResultStage 28 (ShuffledRDD[35] at sortByKey at Graph.scala:77) (first 15 tasks are for partitions Vector(0, 1))
+23/10/26 15:57:29 INFO TaskSchedulerImpl: Adding task set 28.0 with 2 tasks resource profile 0
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 0.0 in stage 28.0 (TID 30) (exp-1-28.expanse.sdsc.edu, executor driver, partition 0, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO TaskSetManager: Starting task 1.0 in stage 28.0 (TID 31) (exp-1-28.expanse.sdsc.edu, executor driver, partition 1, NODE_LOCAL, 4271 bytes) taskResourceAssignments Map()
+23/10/26 15:57:29 INFO Executor: Running task 0.0 in stage 28.0 (TID 30)
+23/10/26 15:57:29 INFO Executor: Running task 1.0 in stage 28.0 (TID 31)
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (98.0 B) non-empty blocks including 2 (98.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Getting 2 (98.0 B) non-empty blocks including 2 (98.0 B) local and 0 (0.0 B) host-local and 0 (0.0 B) push-merged-local and 0 (0.0 B) remote blocks
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:29 INFO ShuffleBlockFetcherIterator: Started 0 remote fetches in 0 ms
+23/10/26 15:57:30 INFO Executor: Finished task 1.0 in stage 28.0 (TID 31). 1436 bytes result sent to driver
+23/10/26 15:57:30 INFO Executor: Finished task 0.0 in stage 28.0 (TID 30). 1436 bytes result sent to driver
+23/10/26 15:57:30 INFO TaskSetManager: Finished task 1.0 in stage 28.0 (TID 31) in 17 ms on exp-1-28.expanse.sdsc.edu (executor driver) (1/2)
+23/10/26 15:57:30 INFO TaskSetManager: Finished task 0.0 in stage 28.0 (TID 30) in 17 ms on exp-1-28.expanse.sdsc.edu (executor driver) (2/2)
+23/10/26 15:57:30 INFO TaskSchedulerImpl: Removed TaskSet 28.0, whose tasks have all completed, from pool 
+23/10/26 15:57:30 INFO DAGScheduler: ResultStage 28 (collect at Graph.scala:77) finished in 0.023 s
+23/10/26 15:57:30 INFO DAGScheduler: Job 1 is finished. Cancelling potential speculative or zombie tasks for this job
+23/10/26 15:57:30 INFO TaskSchedulerImpl: Killing all running tasks in stage 28: Stage finished
+23/10/26 15:57:30 INFO DAGScheduler: Job 1 finished: collect at Graph.scala:77, took 0.063654 s
+(0,1)
+(1,2)
+(2,2)
+(3,1)
+23/10/26 15:57:30 INFO SparkContext: Invoking stop() from shutdown hook
+23/10/26 15:57:30 INFO SparkUI: Stopped Spark web UI at http://exp-1-28.expanse.sdsc.edu:4040
+23/10/26 15:57:30 INFO MapOutputTrackerMasterEndpoint: MapOutputTrackerMasterEndpoint stopped!
+23/10/26 15:57:30 INFO MemoryStore: MemoryStore cleared
+23/10/26 15:57:30 INFO BlockManager: BlockManager stopped
+23/10/26 15:57:30 INFO BlockManagerMaster: BlockManagerMaster stopped
+23/10/26 15:57:30 INFO OutputCommitCoordinator$OutputCommitCoordinatorEndpoint: OutputCommitCoordinator stopped!
+23/10/26 15:57:30 INFO SparkContext: Successfully stopped SparkContext
+23/10/26 15:57:30 INFO ShutdownHookManager: Shutdown hook called
+23/10/26 15:57:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-9f729263-1add-4f08-991d-cc812d746780
+23/10/26 15:57:30 INFO ShutdownHookManager: Deleting directory /tmp/spark-2a594230-474a-4d9f-a526-463a0166b42e
