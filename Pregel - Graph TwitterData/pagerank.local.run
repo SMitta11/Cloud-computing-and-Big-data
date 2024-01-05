@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH -A uot189
+#SBATCH --job-name="pagerank.local"
+#SBATCH --output="pagerank.local.out"
+#SBATCH --partition=shared
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=4
+#SBATCH --mem=16G
+#SBATCH --export=ALL 
+#SBATCH --time=10
+
+module load cpu/0.15.4 gcc/7.5.0 openjdk hadoop/3.2.2 spark
+
+spark-submit --class PageRank --master local[2] pagerank.jar small-twitter.csv
